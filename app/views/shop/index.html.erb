@@ -1,6 +1,18 @@
 <h1>Witaj w moim sklepie</h1>
 
 <p>
+  Kategorie:
+  <ul>
+    <% @categories.each do |category| %>
+        <li>
+          <%= category.name %>
+          - <a href="/categories/<%= category.id %>">Zobacz</a>
+        </li>
+    <% end %>
+  </ul>
+</p>
+
+<p>
   Lista dostępnych produktów:
   <ul>
     <% @products.each do |product| %>
@@ -11,3 +23,4 @@
     <% end %>
   </ul>
 </p>
+
