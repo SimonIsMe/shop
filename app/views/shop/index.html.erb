@@ -6,7 +6,7 @@
     <% @categories.each do |category| %>
         <li>
           <%= category.name %>
-          - <a href="/categories/<%= category.id %>">Zobacz</a>
+          <%= link_to "Zobacz", category %>
         </li>
     <% end %>
   </ul>
@@ -18,7 +18,7 @@
     <% @products.each do |product| %>
         <li>
           <%= product.name %>
-          - <a href="/products/<%= product.id %>">Zobacz</a>
+          <%= link_to "Zobacz", product %>
         </li>
     <% end %>
   </ul>

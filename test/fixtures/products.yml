@@ -1,7 +1,9 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+one:
+  name: MyString
+  price: 1
+
+two:
+  name: MyString
+  price: 1
